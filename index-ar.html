@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/index-ar.css">
+    <title>index</title>
+    <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index-ar.html" id="logo">Tech Blog</a>
+          <select onchange="location = this.value" name="language">
+            <option value="index.html" >English</option>
+            <option value="index-ar.html"selected>Arabic</option>
+          </select>
+        </div>
+      </nav>
+    
+    <div class="container">
+        <div class="hero"><img src="/starter_code/hero.png" alt="hero image">
+            <div class="top-left">
+                <p> Welcome to The <a class="btn-link" href="index-ar.html" id="logo">Tech Blog</a>...</p></div>
+                <a class="top-left"><p>The best place to share your knowledge and make the world better</p> <br>
+            <g href="new_article.html" class="btn-link" id="new">Create an Article</g>
+
+            <div class="centered">
+            <p> Welcome to The <a class="btn-link" href="index-ar.html" id="logo">Tech Blog</a>...</p>
+            <p>The best place to share your knowledge and make the world better</p> <br>
+            <a href="/new_article-ar.html" class="btn-link" id="new">Create an Article</a></div>
+        </div>    
+       <br><br>
+
+    <h1 id="all">All Technical Articles</h1><br><br>
+
+    <div class="col-container">
+        <aside><div class="art-aside"><img src="../starter_code/editor-icons-2.png" alt="editor-icon"><br>admin<div class="container">
+            <img src="/starter_code/heart-suit.png" class="rounded end" alt="like-plus">
+            <div id="likes"></div>
+        </div></div></aside>
+        
+        <h3>HTML Introduction</h3>
+        <p>HTML is the standard markup language for creating Web pages.</p>
+        <a href="/article_ar.html" class="btn btn-link" id="articale">Read Now</a>
+        <a href="/#" class="btn btn-link" id="edit">Edit</a>
+        <a href="/#" class="btn btn-link" id="delete" onclick="deleteArticle()">Delete</a> 
+    </div>
+    <br><hr><br>
+
+    <div class="col-container">
+        <aside><div class="art-aside"><img src="../starter_code/editor-icons-2.png" alt="editor-icon"><br>admin<div class="container">
+            <img src="/starter_code/heart-suit.png" class="rounded end" alt="like-plus">
+            <div id="likes"></div>
+        </div></div></aside>
+        
+        <h3>Creating hyperlinks</h3>
+        <p>Hyperlinks are really important — they are what makes the Web a web. This article shows the syntax required to make a link, and discusses link best practices.</p>
+        <a href="/empty-ar.html" class="btn btn-link" id="articale">Read Now</a>
+        <a href="/#" class="btn btn-link" id="edit">Edit</a>
+        <a href="/#" class="btn btn-link" id="delete" onclick="deleteArticle()">Delete</a>
+    </div><br><hr><br>
+
+    <div class="col-container">
+        <aside><div class="art-aside"><img src="../starter_code/editor-icons-2.png" alt="editor-icon"><br>admin<div class="container">
+            <img src="/starter_code/heart-suit.png" class="rounded end" alt="like-plus">
+            <div id="likes"></div>
+        </div></div></aside>
+        
+        <h3>HTML tables</h3>
+        <p>A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team. This module takes you through all you need to know about structuring tabular data using HTML.</p>
+        <a href="/empty-ar.html" class="btn btn-link" id="articale">Read Now</a>
+        <a href="/#" class="btn btn-link" id="edit">Edit</a>
+        <a href="/#" class="btn btn-link" id="delete" onclick="deleteArticle()">Delete</a> 
+    </div><br><hr><br>
+</div>
+<br><hr><br>
+<div class="footer"><br> © The<a class="btn-link" href="index-ar.html" id="logo">Tech Blog</a>2023 created by 222-SWE-363 201478090</div></div>        
+<script type="text/javascript" src="/public/frontendJS.js"></script>
+
+</body>
+</html>

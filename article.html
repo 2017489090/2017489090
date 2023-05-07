@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
+
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="index.html"><button id="logobtn" class=""> Tech Blog</button></a>
+                <select name="choice" id="SelectLanguage" onchange="location = this.value">
+                    <option value="article.html" selected>English</option>
+                    <option value="article_ar.html">Arabic</option>      
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <div class="htmlIntro">
+        <h1 style="margin: 2em 0em 2em 0em;">HTML Introduction</h1>
+        <div class="byBox">
+            <p><strong>Written by: Souheil Chenaoua</strong></p>
+        </div>
+        <br>
+        <h2 style="font-size: 1.3em; color:#6d64ff;">HTML is the standard mark up language for creating web pages</h2>
+        <h1>What is HTML?</h1>
+        <li> HTML stands for Hyper Text Markup Language</li>
+        <li> HTML is the standard markup language for creating Web pages</li>
+        <li> HTML describes the structure of a Web page</li>
+        <li> HTML consists of a series of elements</li>
+        <li> HTML elements tell the browser how to display the content</li>
+        <li> HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link",
+            etc.</li>
+        <hr class="solid">
+        <h1>What is an HTML ELement?</h1>
+        <p> An HTML element is defined by a start tag. some content, and an end tag:</p>
+        <p> &lt;tagname&gt; Content goes here... &lt;/tagname&gt;</p>
+        <p> The HTML <b>element</b> is everything from the start tag to the end tag:</p>
+        <p> MY First Heading </p>
+        <p>my first paragraph.</p>
+        <table>
+            <tr>
+                <th>Start tag</th>
+                <th>Element Content</th>
+                <th>End Tag</th>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td>My First Heading</td>
+                <td>&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>my first paragraph.</td>
+                <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td>none</td>
+                <td>none</td>
+            </tr>
+        </table>
+        <div class="notes">
+            <p><b>Note:</b> Some HTML elements have no content(like the br element). These elements are called empty
+                elements.
+                Empty elements do not have an end tag!</p>
+            <hr class="solid">
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="navfooter">
+            <div class="a">
+                <p>&#169; The <a href="/index.html"><button id="logobtn" class=""> Tech Blog</button></a>
+                    2023 created by 222-SWE-363 201748090</p>
+            </div>
+
+            <div class="container" id="image">
+                <img src="/starter_code/like-plus.png" class="rounded end" alt="like-plus">
+                <div class="bottom-right">
+                    <div id="likes"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/public/frontendJS.js"></script>
+
+</body>
+
+</html>

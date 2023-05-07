@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
+    <title>Create Article</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="index-ar.html"><button id="logobtn" class=""> Tech Blog</button></a>
+
+                <select onchange="location = this.value" name="language">
+                    <option value="new_article.html">English</option>
+                    <option value="new_article-ar.html" selected>Arabic</option>
+                </select>
+
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="ArticleForm">
+            <div class="center">
+                <h1>Create an article</h1>
+                <form action="">
+                    <div class="">
+                        <label for="title">Title</label><br>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="author">Author</label><br>
+                        <input type="text" name="author" id="author" placeholder="2017408090">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="description">Description</label><br>
+                        <textarea id="description" name="description" rows="2" cols="33">
+                    </textarea>
+                    </div>
+                    <br>
+                    <label for="content">Content</label><br>
+                    <div id="froala">
+                        <script> var editor = new FroalaEditor('#froala');</script>
+                    </div>
+                    <br>
+                    <label for="content">Arabic Content</label><br>
+                    <div id="froala">
+                        <script> var editor = new FroalaEditor('#froala');</script>
+                    </div>
+                    <br>
+                    <button type="submit" value="Create" class="btn btn-dark" id="btnbts" onclick="validateForm()">Create</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="/public/frontendJS.js"></script>
+</body>
+<footer>
+    <div class="navfooter">
+        <p>&#169; The <a href="../index.html"><button id="logobtn" class=""> Tech Blog</button></a>
+            2023 created by 222-SWE-363 201748090</p>
+    </div>
+    
+</footer>
+
+</html>

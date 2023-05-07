@@ -1,0 +1,149 @@
+*{
+    font-family: Helvetica;
+}
+.btn{
+    margin-left: 10px;
+}
+.navbar{
+    background-color: #efeffa;
+}
+#logo{
+    align-content: center;
+    padding: 5px;
+    cursor: pointer;
+    border: 3px solid #6D64FF;
+    border-radius: 2rem;
+    background: #121FCF;
+    background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:0px 10px;
+}
+#lang{margin:0px 10px;}
+
+a.btn-link{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10 rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 3px solid ;
+    -webkit-text-fill-color: #efeffa; 
+}
+#new{
+    border: 3px solid #6D64FF;
+    background-color:#313042;
+}
+#articale{
+    border:3px solid #6D64FF;
+    background-color:#313042;
+}
+#edit{
+background-color: #6D64FF;
+border: 3px solid #313042;
+}
+#delete{
+    border: 3px solid #6D64FF;
+    background-color: #CF1512 ;
+}
+
+.container{
+    max-width: 960px;
+}
+.col-container{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-right: 2px solid #6D64FF;
+    border-bottom: 2px solid #6D64FF;
+    border-radius: 1rem;
+    direction: rtl;
+}
+.art-aside{
+    background-color: #efeffa;
+    cursor: pointer;   
+    padding: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 10px;
+    width: fit-content;
+    float: right;
+    margin: 0rem 0rem 0rem 1rem;
+    text-align: center;
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #efeffa;
+    text-align: center;
+ }
+.btn-link:hover{
+    box-shadow:5px 5px #6D64FF
+}
+@media screen and (min-width:571px) {
+    .container{
+        width: 100%;
+    }
+    .centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+}
+.top-left{
+    display: none;
+}
+a.centered{
+    display: none;
+}
+}
+@media screen and (max-width:570px){
+    .container{
+        width: 100%;
+    }
+    .top-left {
+        position: absolute;
+        top: 10rem;
+        left: 10rem;
+        display: block;
+    }
+    a.top-left{
+        text-decoration: none;
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        display: block;
+        color: black;
+    }
+    g.btn-link{
+        text-decoration: none;
+        position: absolute;
+        top: 65%;
+        left: 80%;
+        display: block;
+        color: #efeffa;
+    }
+   .centered{
+    display: none;
+}
+@media screen and (max-width:700px) {
+    .hero{
+        height: 50vh;
+    }
+}
+@media screen and (min-width:701px) {
+    .hero{
+        height: 95vh;
+    }
+}
+}
+#all{
+    direction: rtl;
+}
