@@ -26,6 +26,12 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 
 //d.	Import the functions in the models/article_model.js
+import {  getAllArticles,
+    getArticleDetail,
+    addArticle,
+    updateArticle,
+    deleteArticle,
+    likeArticle  } from './models/article_model.js'
 
 
 //e.	For GET request on “/”: render the index.html template passing it the list of articles returned by the getAllArticles().

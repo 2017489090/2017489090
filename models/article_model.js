@@ -1,3 +1,27 @@
+
+const sqlite3 = require('sqlite3').verbose();
+let sql;
+
+const db = new sqlite3.Database('./articles_store.db3',sqlite3.OPEN_READWRITE , (err) => {
+    if(err){
+        console.error(err.message);
+    }
+    console.log('Connected to the articles database.'); 
+});
+
+
+
+export {
+    getAllArticles,
+    getArticleDetail,
+    addArticle,
+    updateArticle,
+    deleteArticle,
+    likeArticle 
+}
+
+
+
 //a.	getAllArticles(): query the database to return an array of articles from the articles table.
 //  
     function getAllArticles() {
